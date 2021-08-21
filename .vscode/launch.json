@@ -5,13 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug with esbuild-runner",
-      "program": "${workspaceFolder}/app.ts",
-      "runtimeArgs": ["-r", "esbuild-runner/register"],
+      "name": "Launch Debug",
+      "program": "${workspaceFolder}/src/app.ts",
       "request": "launch",
       "sourceMaps": true,
       "skipFiles": ["<node_internals>/**"],
-      "type": "pwa-node"
+      "type": "pwa-node",
+      "outFiles": ["${workspaceFolder}/build/**/*.js"]
     }
   ]
 }
